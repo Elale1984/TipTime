@@ -1,4 +1,4 @@
-package com.example.tiptime
+package com.headyapps.tiptime
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

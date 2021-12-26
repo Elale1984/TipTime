@@ -1,4 +1,4 @@
-package com.example.tiptime
+package com.headyapps.tiptime
 
 import org.junit.Test
 
