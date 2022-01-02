@@ -3,11 +3,14 @@ package com.headyapps.tiptime
 import android.content.Context
 import android.os.Bundle
 import android.view.KeyEvent
+import android.view.LayoutInflater
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import com.headyapps.tiptime.databinding.ActivityMainBinding
+
 import java.text.NumberFormat
+import com.headyapps.tiptime.databinding.ActivityMainBinding.inflate as inflate1
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,9 +19,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = inflate1(layoutInflater)
         setContentView(binding.root)
 
+        binding.customTipButton.setOnClickListener { customTipLauncher() }
         binding.calculateButton.setOnClickListener { calculateTip() }
 
         binding.costOfServiceEditText.setOnKeyListener { view, keyCode, _ ->
@@ -28,6 +32,10 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
+    }
+
+    private fun customTipLauncher() {
+        TODO("Not yet implemented")
     }
 
     private fun calculateTip() {
@@ -70,6 +78,8 @@ class MainActivity : AppCompatActivity() {
         }
         return false
     }
+
+
 }
 
 

@@ -8,4 +8,15 @@
     <string name="round_up_tip">Round up tip?</string>
     <string name="calculate">Calculate</string>
     <string name="tip_amount">Tip Amount: %s</string>
+
+
+<!--Temp Strings-->
+
+
+<string name="show_dialog">Show dialog</string>
+<string name="show_custom_dialog">Show custom dialog</string>
+<string name="ok">OK</string>
+<string name="greetings_sent_successfully">Greetings sent successfully</string>
+    <string name="orCustomTip">Or</string>
+    <string name="custom_tip_button">Custom Tip</string>
 </resources>

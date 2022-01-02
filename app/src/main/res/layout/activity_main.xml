@@ -87,6 +87,17 @@
                 android:text="@string/ok_10" />
 
         </RadioGroup>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/custom_tip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_tip_button"
+            app:layout_constraintTop_toBottomOf="@+id/tip_options"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp" />
+
+
 
         <ImageView
             android:id="@+id/icon_round_up"
@@ -105,8 +116,8 @@
             android:checked="true"
             android:text="@string/round_up_tip"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/tip_options"
-            app:layout_constraintTop_toBottomOf="@id/tip_options" />
+            app:layout_constraintStart_toStartOf="@id/custom_tip_button"
+            app:layout_constraintTop_toBottomOf="@id/custom_tip_button" />
 
         <Button
             android:id="@+id/calculate_button"
